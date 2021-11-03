@@ -1,0 +1,46 @@
+{
+  "peliculas": [
+    {
+      "name": "xxxxxx",
+      "fecha": "xxxyyy",
+      "director": "davidHer",
+      "imagen": "134567",
+      "id": 2
+    },
+    {
+      "name": "camello",
+      "fecha": "xxxyyy",
+      "director": "davidHer",
+      "imagen": "134567",
+      "id": 4
+    },
+    {
+      "name": "gato",
+      "fecha": "xxxyyy",
+      "director": "davidHer",
+      "imagen": "134567",
+      "id": 5
+    },
+    {
+      "name": "perro",
+      "fecha": "xxxyyy",
+      "director": "davidHer",
+      "imagen": "134567",
+      "id": 6
+    },
+    {
+      "name": "comida",
+      "fecha": "xxxyyy",
+      "director": "davidHer",
+      "imagen": "134567",
+      "id": 7
+    },
+    {
+      "name": "camisa",
+      "fecha": "xxxyyy",
+      "director": "davidHer",
+      "imagen": "134567",
+      "id": 8
+    }
+  ]
+}

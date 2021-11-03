@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:ital,wght@0,100;0,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Movie App</title>
+    <link href="/style/style.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div id="root" class="rmdb-header">
+            <div class="rmdb-header-content">
+
+                <ul>
+                    <a><img src="./img/logo-blockBuster.png" class="rmdb-logo" alt="rmdb-logo">
+                        <li id="todas" onclick="location.href='./index.html'">Todas</li>
+                        <li onclick="location.href='./index.html'">Màs Valoradas</li>
+                        <li onclick="location.href='./index.html'">Menos Valoradas</li>
+                        <input type="text" id="inputBuscar" class="search" placeholder="Search" />
+                        <button id="btnBuscar" class="buscar"><img src="./img/Vector.png" class="buscar2"></button>  
+                      <div class="card">
+                        <div class="card__item">
+                            <img src="./img/registro.png" alt="" onclick="location.href='./registro.html'">
+                            <div>
+                            <div class="card__item">
+                            <img src="./img/pelicula.png" alt="" onclick="location.href='./registropelicula.html'">
+                            <div>
+                        </div>
+                    </ul>
+   
+            
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                </div>
+            </div>
+
+         
+
+            <div class="contenedor__login-register">
+                <form id = "formulario" action="" class="formulario__login">
+                    <h2>Regístrarse</h2>
+                    <input id="name" type="text" placeholder="Nombre completo">
+                    <input id="email" type="text" placeholder="Correo Electronico">
+                    <input id="usuario" type="text" placeholder="Usuario">
+                    <input id="contraseña" type="password" placeholder="Contraseña">
+                    <button type="submit">Regístrarse</button>
+                    <button id="btnModal" type="button">Modificar</button>
+                    <div id="tvesModal" class="modalContainer">
+                        <div class="modal-content">
+                        <span class="close">×</span> <h2>Indique el correo electronio</h2>
+                        <input id="email2" type="text" placeholder="Correo Electronico">
+                        <button id="btnCorreo" class="buton2">Buscar</button> 
+                        <div id="ocultar">
+                        <input id="name2" type="text"class="entrada2" type="text" placeholder="Nombre Completo">
+                        <input id="usuario2" type="text" class="entrada2" type="text" placeholder="Usuario">
+                        <button id="btnEliminar"  type="button">Eliminar Usuario</button> 
+                        <input id="contraseña2" type="password"class="entrada2" type="text" placeholder="Contraseña">
+                        <input id="id" type="text" class="entrada2" type="text" placeholder="Id">
+                        <button id="btnEditar" type="button">Modificar Usuario</button> 
+                    </div></div></div>
+
+                </form>
+
+            
+            </div>
+        </div>
+
+
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script src="./script/usuarios.js" type="module"></script>
+</body>
+    </html>

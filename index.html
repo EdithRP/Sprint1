@@ -2,46 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Movie app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <title>Movie App</title>
+    <link href="/style/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <form id="form">
-            <input type="text" id="inputBuscar" class="search" placeholder="Search" />
-        </form>
-        <button id="btnBuscar">Buscar</button>
-    </header>
-   
-    <div class="row" id="items"></div>
-
-    <template id="template-card">
-      <div class="movie">
-          <img id="image" src="" alt="" width="50"></img>
-          <div class="movie-info">
-            <h3></h3>
+        <div id="root" class="rmdb-header">
+            <div class="rmdb-header-content">
+             <form>
+                <ul>
+                    <a><img src="./img/logo-blockBuster.png" class="rmdb-logo" alt="rmdb-logo">
+                        <li ><a id="todas" >Todas</a></li>
+                        <li ><a id="masvaloradas" onclick="getMovies2()">Màs Valoradas</a></li>
+                        <li ><a id="menosvaloradas" onclick="getMovies3()">Menos Valoradas</a></li>
+                        <input type="text" id="inputBuscar" class="search" placeholder="Search" />
+                        <button id="btnBuscar" class="buscar"><img src="./img/Vector.png" class="buscar2"></button>  
+                      <div class="card">
+                        <div class="card__item">
+                            <img src="./img/registro.png" alt="" onclick="location.href='./registro.html'">
+                            <div>
+                            <div class="card__item">
+                            <img src="./img/pelicula.png" alt="" onclick="location.href='./registropelicula.html'">
+                            <div>
+                        </div>
+                    </ul>
+                </form>
+            
             </div>
-            <div class="overview">
-            <h4></h4>
-            <span></span>
-           </div>
-      
         </div>
-    </template>  
+        </div>
+    </header>
 
+    <div class="rmdb-home">
+        <div id="rmdb-heroimage">
+            <div class="rmdb-heroimage-content">
+                <div id="uno" class="rmdb-heroimage-text uno">
+                    <h1>Mulán</h1>
+                    <p>El emperador de China emite un decreto para reclutar a un varón por cada familia que deberá
+                        servir en el ejército imperial para defender al país de los invasores del norte. Hua Mulán, se
+                        presenta para evitar que su anciano padre sea llamado a filas. Se hace pasar por un hombre.
+                        Mulan deberá apelar a su fuerza interior y sacar a la luz todo su potencial.</p>
+                </div>
+                <div id="dos" class="rmdb-heroimage-text dos">
+                    <h1>Raya</h1>
+                    <p>Raya, una niña de gran espíritu aventurero, se embarca en la búsqueda del último dragón del mundo
+                        con el objetivo de devolver el equilibrio a Kumandra, un lejano y recóndito territorio habitado
+                        por una civilización milenaria.</p>
+                </div>
+                <div id="tres" class="rmdb-heroimage-text tres">
+                    <h1>Onward</h1>
+                    <p>Ambientado en un mundo de fantasía suburbana, dos hermanos elfos adolescentes, Ian y Barley
+                        Lightfood, se embarcan en una aventura en la que se proponen descubrir si existe aún algo de
+                        magia en el mundo que les permita pasar un último día con su padre, que falleció cuando ellos
+                        eran aún muy pequeños como para poder recordarlo.</p>
 
+                </div>
 
+                <div id="enlace">
+
+                    <a href="https://www.youtube.com/watch?v=WSgmnyGZ9_Q&t=2s">
+                        <div class="cuadros">
+                            <div class="cuadro1">
+                                <img id="image11" class="image" src="./img/reproducir.png" alt="" width="50"></img>
+                                
+                                <span>VER AHORA</span>
+
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="slider2">
+        <img id="image1" class="image" src="./img/1.png" alt="" width="50"></img>
+        <img id="image2" class="image" src="./img/2.png" alt="" width="50"></img>
+        <img id="image3" class="image" src="./img/3.png" alt="" width="50"></img>
+    </div>
+
+    <div class="peliculas">
+
+        <h1>Todas las peliculas</h1>
+    </div>
+
+    <div class="row" id="items">
+
+        <template id="template-card">
+            <div class="movie">
+                <img id="image" src="" alt="" width="50"></img>
+                <div class="movie-info">
+                    <h3></h3>
+                    <span class=""></span>
+                </div>
+                <div class="overview">
+                   
+                    <h4></h4>
+                </div>
+
+            </div>
+
+        </template>
+    </div>
 
     <main id="main">
-        
-      
+
     </main>
+
+    <div>
+        <button id="pagina" class="btn-paginacion" onClick='paginacion()'><strong>Mas Peliculas</stron></button>
+    </div>
+
+
 
     <script src="./script/script.js"></script>
 </body>
 
-</html> 
+</html>

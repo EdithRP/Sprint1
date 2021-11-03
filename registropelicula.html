@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:ital,wght@0,100;0,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Movie App</title>
+    <link href="/style/style.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div id="root" class="rmdb-header">
+            <div class="rmdb-header-content">
+
+                <ul>
+                    <a><img src="./img/logo-blockBuster.png" class="rmdb-logo" alt="rmdb-logo">
+                        <li id="todas" onclick="location.href='./index.html'">Todas</li>
+                        <li onclick="location.href='./index.html'">Màs Valoradas</li>
+                        <li onclick="location.href='./index.html'">Menos Valoradas</li>
+                        <input type="text" id="inputBuscar" class="search" placeholder="Search" />
+                        <button id="btnBuscar" class="buscar"><img src="./img/Vector.png" class="buscar2"></button>  
+                      <div class="card">
+                        <div class="card__item">
+                            <img src="./img/registro.png" alt="" onclick="location.href='./registro.html'">
+                            <div>
+                            <div class="card__item">
+                            <img src="./img/pelicula.png" alt="" onclick="location.href='./registropelicula.html'">
+                            <div>
+                        </div>
+                    </ul>
+   
+            
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Desea Registrar Pelicula?</h3>
+                    <p>Recuerda utilizar archivos .png .jpn para las imagenes</p>
+                </div>
+            </div>
+
+         
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form id = "formulario" action="" class="formulario__login">
+                    <h2>Regístra tu pelicula</h2>
+                    <input id="name" type="text" placeholder="Nombre de la pelicula">
+                    <input id="fecha" type="text" placeholder="Fecha de Rodaje">
+                    <input id="director" type="text" placeholder="Director">
+                    <input id="imagen" type="image" placeholder="imagen">
+                    <button type="submit">Regístrar</button>
+                    <button id="btnModal" type="button">Modificar</button>
+                    <div id="tvesModal" class="modalContainer">
+                        <div class="modal-content">
+                        <span class="close">×</span> <h2>Indique el nombre de la pelicula</h2>
+                        <input id="name2" type="text" placeholder="Nombre de la pelicula">
+                        <button id="btnCorreo" class="buton2">Buscar</button> 
+                        <div id="ocultar">
+                        <input id="fecha2" type="text"class="entrada2" type="text" placeholder="Fecha de Rodaje">
+                        <input id="director2" type="text" class="entrada2" type="text" placeholder="Director">
+                        <button id="btnEliminar"  type="button">Eliminar Usuario</button> 
+                        <input id="imagen2" type="password"class="entrada2" type="text" placeholder="Imagen">
+                        <input id="id" type="text" class="entrada2" type="text" placeholder="Id">
+                        <button id="btnEditar" type="button">Modificar Usuario</button> 
+                    </div></div></div>
+
+                </form>
+
+            
+            </div>
+        </div>
+
+
+    </main>
+    <script src="./assets/js/scriptpelicula.js"></script>
+    <script src="./script/peliculas.js" type="module"></script>
+</body>
+    </html>

@@ -1,0 +1,53 @@
+{
+  "usuarios": [
+    {
+      "name": "David",
+      "email": "Herrera@gmail.com",
+      "usuario": "davidHer",
+      "contraseña": "134567",
+      "id": 2
+    },
+    {
+      "name": "Andrea",
+      "email": "andrea-lin@gmail.com",
+      "usuario": "andrerin",
+      "contraseña": "1234567",
+      "id": 4
+    },
+    {
+      "name": "Edith",
+      "email": "ANDRE-LIN@HOTMAIL.ES",
+      "usuario": "dEdith",
+      "contraseña": "1234567",
+      "id": 5
+    },
+    {
+      "name": "Juan",
+      "email": "andres@gmail.com",
+      "usuario": "juanandrestyu",
+      "contraseña": "1234567",
+      "id": 3
+    },
+    {
+      "name": "oscar",
+      "email": "oscar@gmail.com",
+      "usuario": "oscarpalomito",
+      "contraseña": "1234567",
+      "id": 6
+    },
+    {
+      "name": "lorena",
+      "email": "barinasgmailcom",
+      "usuario": "bari123",
+      "contraseña": "12345",
+      "id": 8
+    },
+    {
+      "name": "khn",
+      "email": "lko",
+      "usuario": "okoi",
+      "contraseña": "loiio",
+      "id": 9
+    }
+  ]
+}

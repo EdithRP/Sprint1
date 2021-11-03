@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+   
+    position: relative;
+}
+
+.caja__trasera{
+    width: 70%;
+    height: 410%;
+    padding: 10px 20px;
+    justify-content: center;
+    background-color: rgba(255, 196, 0, 0.39);
+    border-radius: 20%;
+}
+
+
+.caja__trasera div{
+    margin:50px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+  
+    font-size: 26px;
+
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+
+}
+
+
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -170%;
+    left: 10%;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 15% 10%;
+    background:rgba(250, 245, 229, 0.9);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e7ae32;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background:  rgb(226, 214, 200);
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #f7cf4c;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(112, 73, 27);
+    outline: none;
+}
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+         top:40%;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+        top:40%;
+    }
+}
+
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    border-top: 10px solid #e7c21b;
+    width: 60%;
+    height: 50%;
+}
+
+.modalContainer .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#email2{
+    width: 50%;
+}
+
+
+#name2{
+    width: 40%;
+    display:inline-flex;
+    flex-direction: row;
+}
+
+#usuario2{
+    width: 35%;
+    display:inline-flex;
+    flex-direction: row;
+}
+#contraseña2{
+    width: 40%;
+    display:inline-flex;
+    flex-direction: row;
+}
+
+#id{
+    width: 35%;
+    display:inline-flex;
+    flex-direction: row;
+}
+.buton2{
+   
+    padding: 0%;
+    margin: 0%;
+    width: 20%;
+}
