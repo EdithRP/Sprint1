@@ -60,7 +60,32 @@ top: 0px;
     width: 100%;
   margin:0;
 }
-
+.btntrailer{
+    background-color: #FED941;
+    padding: 6px;
+    width: 50%;
+    margin:1%;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 2px;
+    border: none;
+    display: flex;
+    cursor:pointer;
+    overflow: hidden;
+}
+.btnComprar{
+    background-color: #FED941;
+    padding: 6px;
+    width: 50%;
+    margin:1%;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 2px;
+    border: none;
+    display: flex;
+    cursor:pointer;
+    overflow: hidden;
+}
 .rmdb-header li{
 cursor: pointer; 
 color: #fff;
@@ -167,6 +192,7 @@ top:30px;
     -webkit-animation: animateHeroimage 1s;
     animation: animateHeroimage 1s;
     background-image:url("../img/mulan.png");
+ 
 }
 
 #dos{
@@ -241,14 +267,16 @@ main{
 
 .movie{
     width: 220px;
-    height: 96%;
+    height: 95%;
     margin: 0.5rem;
+    align-items: center;
     background-color: var(--secundary-color);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     position:relative;
     overflow: hidden;
     border-radius: 3px;
     cursor:pointer;
+    padding: 0;
 
  
 
@@ -265,10 +293,12 @@ main{
 
 .movie-info h3{
 margin-top: 0;
+font-size: 20px;
 }
 
 .movie img{
     width: 100%;
+    
 }
 
 .movie-info span{
